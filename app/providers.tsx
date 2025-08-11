@@ -3,7 +3,7 @@
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  const appUrl = process.env
+  const appUrl = process?.env
     ?.NEXT_PUBLIC_MINI_APP_URL as `${string}://${string}`;
 
   return (
